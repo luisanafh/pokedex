@@ -14,14 +14,14 @@
 }
 
 .header-image {
-  width: 350px; // Ajusta el tamaño de la imagen
-  height: auto; // Ajusta el tamaño de la imagen
+  width: 350px; 
+  height: auto; 
   margin-right: 10px;
 }
 
-/* Estilos para modo oscuro */
+
 .dark-mode .header {
-  background-color: #333; /* Fondo base en modo oscuro */
+  background-color: #333; 
   background-image: linear-gradient(90deg, rgba(0, 0, 128, 0.5), rgba(0, 0, 128, 0.5)), url('../../images/fondo.webp'); // Filtro azul
 }
 

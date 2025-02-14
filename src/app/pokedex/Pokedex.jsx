@@ -98,18 +98,15 @@ function Pokedex() {
 			});
 	};
 
-	// Hacer scroll hacia la parte superior de la página
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
 
-	// Cambiar página y hacer scroll hacia la parte superior
 	const paginate = (pageNumber) => {
 		setCurrentPage(pageNumber);
 		scrollToTop();
 	};
 
-	// Manejar el cambio de tipo y restablecer la página a 1
 	const handleTypeChange = (type) => {
 		setSelectedType(type);
 		setCurrentPage(1);

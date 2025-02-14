@@ -14,17 +14,26 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.dark-mode .welcome-container{
+  background-color: #424242;;
+  color: white;
+}
 
-.top-container{
+.top-container {
   display: flex;
-align-items: flex-start;
+  align-items: flex-start;
   padding: 20px;
 }
+
 .search-controls-container {
   background-color: #ddd;
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.dark-mode .search-controls-container{
+  background-color: #424242;;
+  color: white;
 }
 
 .search-controls {
@@ -73,8 +82,8 @@ button.exit-button {
   margin: 0 0 0 10px;
   cursor: pointer;
   border-radius: 5px;
-  position: fixed; /* Hace que el contenedor esté fijo en su posición */
-  top: 10px; /* Ajusta la posición superior */
+  position: fixed;
+  top: 10px;
   left: 10px;
 }
 
@@ -82,29 +91,38 @@ button.exit-button:hover {
   background-color: #c82333;
 }
 
-
 .pokemon-list-container {
-  width: calc(100% - 40px); /* Ancho de la pantalla menos 40px (20px de margen a cada lado) */
-  margin: 20px; /* Márgenes de 20px alrededor */
-  background-color: #ddd; /* Color del contenedor de bienvenida */
+  width: calc(100% - 40px); 
+  margin: 20px; 
+  background-color: #ddd; 
   padding: 20px;
   border-radius: 5px;
 }
+.dark-mode .pokemon-list-container{
+  background-color: #424242;;
+
+}
+
 
 .pokemon-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Ajusta automáticamente el número de columnas basado en el tamaño de pantalla */
-  gap: 20px; /* Espacio entre las tarjetas */
-  justify-items: center; /* Centra las tarjetas horizontalmente */
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+  justify-items: center; 
 }
 
 .pagination {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  list-style: none;
+  padding: 0;
 }
 
-.pagination button {
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
   background-color: #dc3545;
   border: none;
   color: white;
@@ -113,15 +131,49 @@ button.exit-button:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 0 5px;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.pagination button:hover {
-  background-color: #b71c1c; /* Rojo dos tonos más oscuro */
+.page-link:hover {
+  background-color: #b71c1c; 
 }
 
-.pagination .active {
-  background-color: #b71c1c; /* Rojo dos tonos más oscuro */
+.page-item.active .page-link {
+  background-color: #b71c1c; 
+}
+
+.page-item.disabled .page-link {
+  background-color: #f5c6cb;
+  cursor: not-allowed;
+}
+
+/* Media query para telefonos */
+@media (max-width: 600px) {
+  .top-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .pokemon-list-container {
+    width: calc(100% - 20px); 
+    margin: 10px; 
+    padding: 10px;
+  }
+
+  .pokemon-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+
+  .search-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input, select, button.search-button {
+    margin: 10px 0;
+    font-size: 14px; 
+    padding: 8px; 
+  }
 }

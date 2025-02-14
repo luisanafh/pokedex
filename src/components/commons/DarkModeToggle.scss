@@ -10,8 +10,8 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
-  transition: all 1s ease-in-out; /* Suave transición para el botón */
+  z-index: 1000;
+  transition: all 1s ease-in-out; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .dark-mode-toggle .fa-icon {
-  transition: all 1s ease-in-out; /* Suave transición para el ícono */
+  transition: all 1s ease-in-out; 
 }
 
 .dark-mode-toggle:hover {
@@ -29,5 +29,5 @@
 .dark-mode .dark-mode-toggle {
   background-color: #FFD700;
   color: #333;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
+  box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.6);
 }
