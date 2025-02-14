@@ -1,0 +1,30 @@
+.header {
+  background: url('../../images/fondo.webp') no-repeat center center; // Asegúrate de que la ruta sea correcta
+  background-size: cover;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  width: 350px; // Ajusta el tamaño de la imagen
+  height: auto; // Ajusta el tamaño de la imagen
+  margin-right: 10px;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .header {
+  background-color: #333; /* Fondo base en modo oscuro */
+  background-image: linear-gradient(90deg, rgba(0, 0, 128, 0.5), rgba(0, 0, 128, 0.5)), url('../../images/fondo.webp'); // Filtro azul
+}
+
+.dark-mode .header-image {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.7)); // Añade un pequeño filtro azul en modo oscuro
+}

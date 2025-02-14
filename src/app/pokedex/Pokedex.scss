@@ -1,0 +1,127 @@
+.pokedex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-container {
+  background-color: #ddd;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-container{
+  display: flex;
+align-items: flex-start;
+  padding: 20px;
+}
+.search-controls-container {
+  background-color: #ddd;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.search-controls {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 0 10px 0 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+select {
+  margin: 0 0 0 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button.search-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.search-button:hover {
+  background-color: #0056b3;
+}
+
+button.exit-button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed; /* Hace que el contenedor esté fijo en su posición */
+  top: 10px; /* Ajusta la posición superior */
+  left: 10px;
+}
+
+button.exit-button:hover {
+  background-color: #c82333;
+}
+
+
+.pokemon-list-container {
+  width: calc(100% - 40px); /* Ancho de la pantalla menos 40px (20px de margen a cada lado) */
+  margin: 20px; /* Márgenes de 20px alrededor */
+  background-color: #ddd; /* Color del contenedor de bienvenida */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Ajusta automáticamente el número de columnas basado en el tamaño de pantalla */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-items: center; /* Centra las tarjetas horizontalmente */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: #b71c1c; /* Rojo dos tonos más oscuro */
+}
+
+.pagination .active {
+  background-color: #b71c1c; /* Rojo dos tonos más oscuro */
+}

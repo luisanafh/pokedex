@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Consolas', Arial;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f7f7f7;
+}
+
+.dark-mode .pokemon-container {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .detail-block {
+  background-color: #555;
+}
+
+

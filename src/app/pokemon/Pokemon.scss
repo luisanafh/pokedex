@@ -1,0 +1,341 @@
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px; /* Añade margen de 50px en todos los lados */
+}
+
+.back-button {
+  align-self: flex-start;
+  background-color: #DC3545; /* Cambia el color del botón a rojo */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pokemon-img {
+  width: 350px; /* Aumenta aún más el tamaño de la imagen */
+  height: 350px; /* Aumenta aún más el tamaño de la imagen */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.pokemon-id {
+  font-size: 1.5rem; /* Aumenta el tamaño del ID */
+  color: #ad981d; /* Color más oscuro en modo claro */
+}
+
+.pokemon-name {
+  font-size: 2.5rem; /* Aumenta el tamaño del nombre del Pokémon */
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 5px; /* Añade espacio entre los contenedores */
+}
+
+.detail-block {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px; /* Añade separación de 5px del borde */
+  flex: 1;
+  text-align: center; /* Centra el contenido */
+}
+
+.detail-block h3 {
+  font-size: 20px; /* Aumenta el tamaño de los subtítulos */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pokemon-stats,
+.pokemon-moves {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pokemon-moves {
+  margin-top: 10px; /* Separa el contenedor "Moves" del contenedor "Stats" por 10px */
+}
+
+.pokemon-stats p,
+.pokemon-moves li {
+  font-size: 1rem;
+  color: #555;
+}
+
+.types-container,
+.abilities-container,
+.moves-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra el contenido */
+  gap: 5px;
+}
+
+.ability-badge,
+.move-badge,
+.type-badge {
+  display: inline-block;
+  padding: 5px 10px; /* Hace más grandes los contenedores de tipos */
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo un poco más oscuro que el fondo */
+  color: #333;
+  margin: 2px;
+}
+
+.type-badge {
+  padding: 5px 10px; /* Hace más grandes los contenedores de tipos */
+}
+
+.move-badge {
+  padding: 3px 7px; /* Hace ligeramente más pequeños los contenedores de movimientos */
+}
+
+.pokemon-moves {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon-moves li {
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 20px;
+  margin-top: 5px;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.type-grass {
+  background-color: #78C850;
+}
+
+.type-poison {
+  background-color: #ae7bc5;
+}
+
+.type-fire {
+  background-color: #F08030;
+}
+
+.type-water {
+  background-color: #6890F0;
+}
+
+.type-flying {
+  background-color: #aabed1;
+}
+
+.type-bug {
+  background-color: #bfcf2a;
+}
+
+.type-normal {
+  background-color: #A8A878;
+}
+
+.type-fighting {
+  background-color: #b18968;
+}
+
+.type-ground {
+  background-color: #77573c;
+}
+
+.type-rock {
+  background-color: #616161;
+}
+
+.type-ghost {
+  background-color: #5a1196;
+}
+
+.type-steel {
+  background-color: #8a8a8a;
+}
+
+.type-electric {
+  background-color: #e2e61a;
+}
+
+.type-psychic {
+  background-color: #790691;
+}
+
+.type-ice {
+  background-color: #8bbdff;
+}
+
+.type-dragon {
+  background-color: #acb806;
+}
+
+.type-dark {
+  background-color: #455346;
+  color: white;
+}
+
+.type-fairy {
+  background-color: #ce25ce;
+}
+
+@media (min-width: 768px) {
+  .pokemon-details {
+    justify-content: space-between;
+  }
+
+  .pokemon-details p {
+    flex: 0 0 48%;
+  }
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .pokemon-container {
+  background-color: #333;
+  color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .back-button {
+  background-color: #DC3545; /* Cambia el color del botón a rojo en modo oscuro */
+  color: #fff;
+}
+
+.dark-mode .pokemon-id {
+  color: #FFD700; /* Añade color dorado al ID en modo oscuro */
+}
+
+.dark-mode .pokemon-name {
+  font-size: 2.5rem; /* Aumenta el tamaño del nombre del Pokémon */
+  color: #f7f7f7;
+}
+
+.dark-mode .detail-block {
+  background-color: #444;
+}
+
+.dark-mode .detail-block h3 {
+  color: #f7f7f7; /* Mejora la visibilidad de los subtítulos en modo oscuro */
+}
+
+.dark-mode .ability-badge,
+.dark-mode .move-badge,
+.dark-mode .type-badge {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo un poco más oscuro que el fondo */
+  color: #f7f7f7;
+}
+
+.dark-mode .type-grass {
+  background-color: #78C850;
+}
+
+.dark-mode .type-poison {
+  background-color: #ae7bc5;
+}
+
+.dark-mode .type-fire {
+  background-color: #F08030;
+}
+
+.dark-mode .type-water {
+  background-color: #6890F0;
+}
+
+.dark-mode .type-flying {
+  background-color: #aabed1;
+}
+
+.dark-mode .type-bug {
+  background-color: #bfcf2a;
+}
+
+.dark-mode .type-normal {
+  background-color: #A8A878;
+}
+
+.dark-mode .type-fighting {
+  background-color: #b18968;
+}
+
+.dark-mode .type-ground {
+  background-color: #77573c;
+}
+
+.dark-mode .type-rock {
+  background-color: #616161;
+}
+
+.dark-mode .type-ghost {
+  background-color: #5a1196;
+}
+
+.dark-mode .type-steel {
+  background-color: #8a8a8a;
+}
+
+.dark-mode .type-electric {
+  background-color: #e2e61a;
+}
+
+.dark-mode .type-psychic {
+  background-color: #790691;
+}
+
+.dark-mode .type-ice {
+  background-color: #8bbdff;
+}
+
+.dark-mode .type-dragon {
+  background-color: #acb806;
+}
+
+.dark-mode .type-dark {
+  background-color: #253626;
+}
+
+.dark-mode .type-fairy {
+  background-color: #ce25ce;
+}

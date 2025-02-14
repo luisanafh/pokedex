@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Consolas', Arial;
+
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.pokedex-text {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.pokedex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pokedex {
+  position: relative;
+  width: 486px;
+  height: 277px;
+  background: url(/src/images/pokedex2.png) no-repeat center center;
+  background-size: contain;
+}
+
+.pokedex-screen {
+  width: 120px;
+  height: 79px;
+  background: #002923;
+  position: absolute;
+  top: 80px;
+  left: 85px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.screen-on {
+  background: #015044;
+}
+
+.pokedex-light {
+  width: 31px; 
+  height: 32px; 
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 77px;
+  animation-duration: 1s;
+  animation-name: light;
+  animation-iteration-count: infinite;
+}
+
+.light-on {
+  background: #39beff;
+}
+
+.pokedex-input {
+  width: 53px;
+  height: 20px;
+  bottom: 32px;
+  right: 151px;
+  border-radius: 5px;
+  position: absolute;
+  background: white;
+  border: 2px solid #002923;
+  color: #002923;
+  font-size: 11px; 
+  outline: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.is-enabled {
+  opacity: 1;
+  cursor: auto;
+}
+
+.is-disabled {
+  opacity: 0;
+  transition: 0.5s;
+  cursor: initial;
+}
+
+.pokedex-button {
+  position: absolute;
+  bottom: 65px; 
+  right: 72px;  
+  height: 24px; 
+  width: 75px;  
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px; 
+  line-height: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.pokedex-button-start {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  width: 57px;
+  height: 20px;
+  border: none;
+  background: #00ad5e;
+  color: white;
+  font-family: 'Consolas', Arial;
+  font-size: 14px; 
+  cursor: pointer;
+  outline: none;
+}
+
+.pokedex-button-on {
+  position: absolute;
+  bottom: 68px;
+  left: 73px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: 'Consolas', Arial;
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer; 
+  outline: none;
+}
+
+@keyframes light {
+  0% {
+    background-color: #39beff4a;
+    box-shadow: none;
+  }
+  50% {
+    background-color: #39beff4a;
+    box-shadow: 0 0 12px 8px white;
+  }
+  100% {
+    background-color: #39beff4a;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .pokedex {
+    width: 786px;
+    height: 577px;
+  }
+
+  .pokedex-screen {
+    width: 237px;
+    height: 158px;
+    top: 169px;
+    left: 73px;
+    border-radius: 10px;
+  }
+
+  .pokedex-light {
+    width: 58px;
+    height: 60px;
+    top: 20px;
+    left: 50px;
+  }
+
+  .pokedex-input {
+    width: 110px;
+    height: 36px;
+    bottom: 78px;
+    right: 212px;
+    font-size: 15px;
+  }
+
+  .pokedex-button {
+    bottom: 80px;
+    right: 96px;
+    height: 32px;
+    width: 100px;
+    font-size: 30px;
+  }
+
+  .pokedex-button-start {
+    bottom: 75px;
+    left: 100px;
+    width: 110px;
+    height: 45px;
+    font-size: 30px;
+  }
+
+  .pokedex-button-on {
+    bottom: 143px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    font-size: 21px;
+  }
+
+  .text {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .pokedex-text {
+    font-size: 20px;
+  }
+}

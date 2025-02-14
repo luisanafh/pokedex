@@ -1,0 +1,74 @@
+.pokemon-card {
+  width: 270px; /* Aumenta el ancho */
+  height: 450px; /* Aumenta la altura */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  text-decoration: none; /* Quita el subrayado de las letras */ 
+  border:none;
+  outline:none;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h2 {
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado del nombre */
+    border: none; /* Quita el borde del texto */
+    outline: none; /* Quita el borde del texto */
+  }
+
+  .pokemon-image {
+    width: 200px; /* Haz la imagen más grande */
+    height: auto;
+    position: relative;
+    z-index: 1; /* Para asegurarse de que la imagen esté en frente */
+  }
+
+  .pokemon-stats {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -50px; /* Para que el contenedor suba detrás de la imagen */
+    position: relative;
+    z-index: 0; /* Para asegurarse de que el contenedor esté detrás de la imagen */
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado del texto */
+    height: 250px; /* Asegura que el contenedor blanco sea lo suficientemente alto para no desbordarse */
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      gap: 10px; /* Espacio entre elementos */
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 10px 0;
+
+      .stat-name {
+        display: block; /* El subtítulo en una línea */
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-decoration: none; /* Quita el subrayado de las letras */
+        border: none; /* Quita el borde del texto */
+        outline: none; /* Quita el borde del texto */
+      }
+
+      .stat-value {
+        display: block; /* El valor debajo del subtítulo */
+        font-size: 14px;
+        color: #333;
+        text-decoration: none; /* Quita el subrayado de las letras */
+        border: none; /* Quita el borde del texto */
+        outline: none; /* Quita el borde del texto */
+      }
+    }
+  }
+}

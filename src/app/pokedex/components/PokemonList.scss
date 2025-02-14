@@ -1,0 +1,7 @@
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Ajusta automáticamente el número de columnas basado en el tamaño de pantalla */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-items: center; /* Centra las tarjetas horizontalmente */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
