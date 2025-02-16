@@ -3,6 +3,7 @@ import { useName } from '../../hooks/useName';
 import axios from 'axios';
 import PokemonList from './components/PokemonList';
 import Pagination from './components/Pagination';
+import PokemonCard from './components/PokemonCard';
 import { Link } from 'react-router';
 import './Pokedex.scss';
 
@@ -152,17 +153,12 @@ function Pokedex() {
 			</div>
 
 			{singlePokemon ? (
-				<Link to={`/pokemon/${singlePokemon.name}`}>
-					<div>
-						<h2>{singlePokemon?.name}</h2>
-						<img
-							src={
-								singlePokemon?.sprites?.other['official-artwork']?.front_default
-							}
-							alt={singlePokemon.name}
-						/>
-					</div>
-				</Link>
+				<div className="pokemon-list-container">
+					<PokemonCard
+						key={singlePokemon.name}
+						url={`${POKEAPI_BASE}/pokemon/${singlePokemon.name}`}
+					/>
+				</div>
 			) : (
 				<div className="pokemon-list-container">
 					<PokemonList pokemons={filteredPokemons} />

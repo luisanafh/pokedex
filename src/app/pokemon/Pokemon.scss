@@ -7,12 +7,12 @@
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 50px; /* Añade margen de 50px en todos los lados */
+  margin: 50px; 
 }
 
 .back-button {
   align-self: flex-start;
-  background-color: #DC3545; /* Cambia el color del botón a rojo */
+  background-color: #DC3545; 
   border: none;
   color: white;
   padding: 10px 20px;
@@ -26,19 +26,19 @@
 }
 
 .pokemon-img {
-  width: 350px; /* Aumenta aún más el tamaño de la imagen */
-  height: 350px; /* Aumenta aún más el tamaño de la imagen */
+  width: 350px; 
+  height: 350px; 
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .pokemon-id {
-  font-size: 1.5rem; /* Aumenta el tamaño del ID */
-  color: #ad981d; /* Color más oscuro en modo claro */
+  font-size: 1.5rem; 
+  color: #ad981d; 
 }
 
 .pokemon-name {
-  font-size: 2.5rem; /* Aumenta el tamaño del nombre del Pokémon */
+  font-size: 2.5rem; 
   font-weight: bold;
   color: #333;
   margin: 10px 0;
@@ -49,19 +49,19 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  gap: 5px; /* Añade espacio entre los contenedores */
+  gap: 5px; 
 }
 
 .detail-block {
   padding: 15px;
   border-radius: 5px;
-  margin: 5px; /* Añade separación de 5px del borde */
+  margin: 5px; 
   flex: 1;
-  text-align: center; /* Centra el contenido */
+  text-align: center;
 }
 
 .detail-block h3 {
-  font-size: 20px; /* Aumenta el tamaño de los subtítulos */
+  font-size: 20px; 
   color: #333;
   margin-bottom: 10px;
 }
@@ -73,7 +73,7 @@
 }
 
 .pokemon-moves {
-  margin-top: 10px; /* Separa el contenedor "Moves" del contenedor "Stats" por 10px */
+  margin-top: 10px; 
 }
 
 .pokemon-stats p,
@@ -87,7 +87,7 @@
 .moves-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra el contenido */
+  justify-content: center; 
   gap: 5px;
 }
 
@@ -95,19 +95,19 @@
 .move-badge,
 .type-badge {
   display: inline-block;
-  padding: 5px 10px; /* Hace más grandes los contenedores de tipos */
+  padding: 5px 10px;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.1); /* Fondo un poco más oscuro que el fondo */
+  background-color: rgba(0, 0, 0, 0.1); 
   color: #333;
   margin: 2px;
 }
 
 .type-badge {
-  padding: 5px 10px; /* Hace más grandes los contenedores de tipos */
+  padding: 5px 10px; 
 }
 
 .move-badge {
-  padding: 3px 7px; /* Hace ligeramente más pequeños los contenedores de movimientos */
+  padding: 3px 7px; 
 }
 
 .pokemon-moves {
@@ -203,6 +203,7 @@
 
 .type-psychic {
   background-color: #790691;
+  color: white;
 }
 
 .type-ice {
@@ -240,16 +241,16 @@
 }
 
 .dark-mode .back-button {
-  background-color: #DC3545; /* Cambia el color del botón a rojo en modo oscuro */
+  background-color: #DC3545; 
   color: #fff;
 }
 
 .dark-mode .pokemon-id {
-  color: #FFD700; /* Añade color dorado al ID en modo oscuro */
+  color: #FFD700; 
 }
 
 .dark-mode .pokemon-name {
-  font-size: 2.5rem; /* Aumenta el tamaño del nombre del Pokémon */
+  font-size: 2.5rem; 
   color: #f7f7f7;
 }
 
@@ -258,13 +259,13 @@
 }
 
 .dark-mode .detail-block h3 {
-  color: #f7f7f7; /* Mejora la visibilidad de los subtítulos en modo oscuro */
+  color: #f7f7f7; 
 }
 
 .dark-mode .ability-badge,
 .dark-mode .move-badge,
 .dark-mode .type-badge {
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo un poco más oscuro que el fondo */
+  background-color: rgba(255, 255, 255, 0.1); 
   color: #f7f7f7;
 }
 
@@ -321,7 +322,8 @@
 }
 
 .dark-mode .type-psychic {
-  background-color: #790691;
+  background-color: #9007ac;
+  color: white;
 }
 
 .dark-mode .type-ice {
@@ -334,6 +336,7 @@
 
 .dark-mode .type-dark {
   background-color: #253626;
+  color: white;
 }
 
 .dark-mode .type-fairy {

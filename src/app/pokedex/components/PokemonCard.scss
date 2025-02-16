@@ -1,5 +1,5 @@
 .pokemon-card {
-  width: 270px; 
+  width: 270px;
   height: 450px;
   border-radius: 10px;
   overflow: hidden;
@@ -8,10 +8,14 @@
   text-align: center;
   transition: transform 0.3s ease;
   position: relative;
-  text-decoration: none;
-  border:none;
-  outline:none;
+  text-decoration: underline; 
+  text-decoration-color: rgb(255, 255, 255);
 
+  .pokemon-types{
+    line-height: 2px;
+    font-size: 20px;
+
+  }
   &:hover {
     transform: scale(1.05);
   }
@@ -19,33 +23,33 @@
   h2 {
     margin: 10px 0;
     text-align: center;
-    text-decoration: none; 
-    border: none; 
-    outline: none; 
+    text-decoration: none;
+    border: none;
+    outline: none;
   }
 
   .pokemon-image {
-    width: 200px; 
+    width: 200px;
     height: auto;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
   .pokemon-stats {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    margin-top: -50px; 
+    margin-top: -50px;
     position: relative;
-    z-index: 0; 
+    z-index: 0;
     text-align: center;
-    text-decoration: none; 
-    height: 250px; 
+    text-decoration: none;
+    height: 250px;
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 10px; 
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
 
     .stat-item {
@@ -53,22 +57,41 @@
       padding: 10px 0;
 
       .stat-name {
-        display: block; 
+        display: block;
         font-weight: bold;
         margin-bottom: 5px;
-        text-decoration: none; 
-        border: none; 
-        outline: none; 
+        text-decoration: none;
+        border: none;
+        outline: none;
       }
 
       .stat-value {
-        display: block; 
+        display: block;
         font-size: 14px;
         color: #333;
-        text-decoration: none; 
-        border: none; 
-        outline: none; 
+        text-decoration: none;
+        border: none;
+        outline: none;
       }
     }
   }
 }
+
+/* Estilos para modo oscuro */
+.dark-mode .pokemon-card .pokemon-stats {
+  background-color: #000000; 
+  text-decoration-color: rgb(0, 0, 0);
+
+}
+.dark-mode .pokemon-card {
+ 
+  text-decoration-color: rgb(0, 0, 0);
+
+}
+.dark-mode .pokemon-card .pokemon-stats .stat-item .stat-value {
+  color: white;
+}
+
+
+
+

@@ -30,7 +30,7 @@ function PokemonCard({ url }) {
 			case 'poison':
 				return '#A040A0';
 			case 'electric':
-				return '#F8D030';
+				return '#babd14';
 			case 'ground':
 				return '#E0C068';
 			case 'fairy':
@@ -115,6 +115,9 @@ function PokemonCard({ url }) {
 					)}
 				<div className="pokemon-stats">
 					<h2 style={{ color: firstTypeColor }}>{capitalize(pokemon?.name)}</h2>
+					<p className="pokemon-types" style={{ color: firstTypeColor }}>
+						{pokemon.types.map((type) => type.type.name).join(' / ')}
+					</p>
 					<div className="stats-grid">
 						{pokemon.stats &&
 							pokemon.stats
